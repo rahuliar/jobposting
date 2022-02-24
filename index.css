@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: var(--color2);
+    background-color:white;
     color: var(--color);
 }
 .block{
@@ -49,10 +49,11 @@ aside{
     border-radius: 20px;
     background:white;
     justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(1, 0, 7, 0.377)
 }
 .post:hover{
-   
-    box-shadow: 0 4px 10px rgba(1, 0, 7, 0.685)}
+    box-shadow: 0 4px 10px rgba(1, 0, 7, 0.808)
+}
 .post a{
     text-decoration: none;
     font-size: 70%;
