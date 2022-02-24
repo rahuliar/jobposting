@@ -118,6 +118,9 @@ aside input{
         width: 100px;
         margin: 0px 4px;
     }
+    .detailsBlock{
+        flex-direction: column;
+    }
 }
 @media (max-width:450px) {
     .postBlock{
