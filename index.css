@@ -67,7 +67,6 @@ button:hover{
     line-height: 30px;
 }
 aside{
-    width: 100%;
     height: 100vh;
     border-radius: 10px;
     background-color: white;
@@ -129,13 +128,13 @@ input::placeholder{
    background-color: transparent;
 }
 
-
-
-
 /* media  */
 @media (max-width:991px) {
     aside{
         height: fit-content;
+    }
+    .postBlock2{
+        flex-direction: column;
     }
 }
 @media (max-width:800px) {
