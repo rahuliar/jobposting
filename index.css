@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color:white;
+    background-color:whitesmoke;
     color: var(--color);
 }
 .block{
@@ -34,10 +34,43 @@ button:hover{
 }
 
 /* post section  */
+.block1::before{
+    content: '';
+    height: 100vh;
+    width: 100%;
+    position:absolute;
+    background: url(https://demo.graygrids.com/themes/jobboard-demo/assets/img/bg/bg-intro.jpg) center center no-repeat;
+    z-index: -1;
+}
+.block1
+{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.63);
+    z-index: 1;
+    color: var(--color);
+    margin: 0px !important;
+    align-items: flex-start;
+}
+.block1 h2{
+    font-size: 30px;
+    font-weight: 400;
+    margin: 10px 0px;
+    letter-spacing: -1px;
+}
+
+.block1 h1{
+    font-weight: 700;
+    font-size: 50px;
+    margin: 10px 0px;
+    letter-spacing: 0.7px;
+    line-height: 30px;
+}
 aside{
     width: 100%;
     height: 100vh;
     border-radius: 10px;
+    background-color: white;
     box-shadow: 0 4px 10px rgba(1, 0, 7, 0.377);
 }
 span{
@@ -50,21 +83,24 @@ aside span{
 aside span:hover{
     color: var(--color2);
 }
-aside input{
+ input{
     border-radius: 8px;
     padding: 3px 5px;
-    accent-color: var(--color);
     border: 0.5px solid var(--color);
+    accent-color: var(--color);
+}
+input::placeholder{
+    color: var(--color);
 }
 
 .post{
     border-radius: 20px;
     background:white;
     justify-content: space-between;
-    box-shadow: 0 4px 10px rgba(1, 0, 7, 0.377)
+    box-shadow: 0 4px 10px rgba(1, 0, 7, 0.185)
 }
 .post:hover{
-    box-shadow: 0 4px 10px rgba(1, 0, 7, 0.568)
+    box-shadow: 0 4px 10px rgba(1, 0, 7, 0.418)
 }
 .post .marginSpan a{
     text-decoration: none;
@@ -106,6 +142,12 @@ aside input{
     .postBlock{
         width: 90vw;
     }
+    .block1 h1{
+        font-size: 40px;
+    }
+    .block1 h2{
+        font-size: 28px;
+    }
 }
 @media (max-width:600px) {
     .post{
@@ -121,6 +163,12 @@ aside input{
     .detailsBlock{
         flex-direction: column;
     }
+    .block1 h1{
+        font-size: 38px;
+    }
+    .block1 h2{
+        font-size: 27px;
+    }
 }
 @media (max-width:450px) {
     .postBlock{
@@ -132,5 +180,17 @@ aside input{
     .post img{
         height: 4rem;
         width: 4rem;
+    }
+    .block1 h1{
+        font-size: 35px;
+    }
+    .block1 h2{
+        font-size: 26px;
+    }
+    .inputBlock{
+        flex-direction: column;
+    }
+    #jobtype{
+        margin: 5px 0px !important;
     }
 }
